@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+	<!--Unidad de persistencia -->
+	<persistence-unit name="HibernateT2" transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+		
+
+		<properties>
+			<!--Driver -->
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+			<!--url bbdd -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+			<!--nombre usuario -->
+			<property name="javax.persistence.jdbc.user" value="system" />
+			<!--contraseña usuario -->
+			<property name="javax.persistence.jdbc.password" value="vscsmIfav1" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect" />
+
+			<!--update:el propio hibernate se encargará de actualizar la bd si hacemos 
+				cambios por código -->
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
+
+		</properties>
+	</persistence-unit>
+</persistence>
