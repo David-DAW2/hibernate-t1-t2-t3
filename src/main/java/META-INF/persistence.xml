@@ -17,9 +17,9 @@
 			<!--url bbdd -->
 			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE" />
 			<!--nombre usuario -->
-			<property name="javax.persistence.jdbc.user" value="system" />
+			<property name="javax.persistence.jdbc.user" value="DavidDual" />
 			<!--contraseña usuario -->
-			<property name="javax.persistence.jdbc.password" value="vscsmIfav1" />
+			<property name="javax.persistence.jdbc.password" value="DavidDual" />
 
 			<property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect" />
 

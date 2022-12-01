@@ -1,4 +1,4 @@
-package nttdatacenters_hibernate_t1_draDavid.persistence;
+package nttdatacenters_hibernate_t1_draDavid.persistence.Dao.Interfaces;
 
 import java.util.List;
 
